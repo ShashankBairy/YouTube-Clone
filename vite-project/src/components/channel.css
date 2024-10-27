@@ -1,0 +1,217 @@
+.channelform{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.channelform form{
+    width: 500px;
+    height: auto;
+    background-color:white;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.channelform label{
+    color:red;
+}
+.channelform input, .channelform textarea{
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #444;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.channelform input:placeholder-shown{
+    color: #282626;
+}
+
+.submitButton{
+   width: 100px;
+   height: 40px;
+   color:white;
+   background-color: red;
+   border-radius: 10px;
+   cursor: pointer;
+   margin-left: 175px;
+}
+
+.submitButton:hover{
+    
+    color: red;
+    background-color: white;
+    box-shadow:  0 4px 8px 0  red;
+}
+
+
+/* Channel Page Style----------------------------------------- */
+.channelpage-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 100px;
+    color: white;
+}
+
+.channeldetails{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+.channellogodiv{
+   font-size:150px;
+}
+
+.channelinfo{
+    margin-top: 20px;
+}
+.channelpage-container hr{
+    border: 0;
+    height: 1px;
+    background-color: #303030;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 10px 0; 
+}
+
+.creatediv{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.createvideobutton{
+    width:100px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: rgb(207, 37, 37);
+    color: #eddddd;
+    cursor: pointer;
+}
+
+.createvideobutton:hover{
+    background-color:white;
+    color: red;
+    box-shadow:  0 4px 8px 0  red;
+}
+
+.detailsofvideo{
+    width: 360px;
+    height: 280;
+    /* background-color: #444; */
+    border-radius: 10px;
+    position: relative;
+}
+
+.detailsofvideo:hover, .detailsofvideo img:hover {
+  border-radius: 0px;
+}
+
+.detailsofvideo img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.infoofchannel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: white;
+}
+
+.channeluserlogo{
+    margin-left: 10px;
+    display: flex;
+    font-size: 30px;
+}
+
+.infochanneldetails{
+    margin-left: 20px;
+    width: 270px;
+}
+
+.infochanneldetails p{
+    color:#6c6969;
+}
+
+.settingsdiv{
+    margin-left: 10px;
+}
+
+.settingsicon{
+    cursor: pointer;
+}
+
+.settingsbox {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    z-index: 10;
+    top:210px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+  
+.settingsbox button {
+    display: block;
+    margin: 5px 0;
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%; /* Full-width buttons */
+}
+  
+
+
+.videos-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    cursor: pointer;
+}
+
+
+@media (max-width:900px) and (min-width:600px){
+  
+    .channelpage-container{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .videos-row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        cursor: pointer;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .videos-row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        cursor: pointer;
+        margin-left: 100px;
+    }
+
+}

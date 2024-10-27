@@ -1,0 +1,206 @@
+.main-container{
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    color:white;
+    /* height: 100vh; */
+}
+  
+.asidediv {
+    width: 100px;
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+    
+.asidediv p {
+    font-size: x-small;
+}
+    
+.homepage-content {
+    flex: 1; /* Takes up the remaining space next to the sidebar */
+    padding: 20px;
+    color: white;
+    background-color: #1c1c1c;
+    overflow-y: auto;
+}
+  
+.homediv{
+    width: 70px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+.homediv:hover{
+    background-color: #282626;
+    border-radius: 15px;
+}
+    
+.houseIcon{
+    font-size: larger;
+}
+
+.main-content{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.lidiv{
+    margin-top: 10px;
+    width:auto;
+    height: 100%;
+    padding: 10px;
+    background-color:#282626;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.lidiv:hover{
+    background-color: rgb(61, 59, 59);
+}
+
+li{
+    font-size:small;
+}
+
+.mainmatter{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.videodiv{
+    width:360px;
+    height: 300px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.videodiv:hover{
+    border-radius: 0;
+    
+}
+
+.videoinfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgdiv{
+    height: 200px;
+    background-color: #282626;
+    border-radius: 10px;
+    position: relative;
+}
+
+.imgdiv:hover, .imgdiv img:hover{
+    border-radius: 0px;
+}
+
+.imgdiv img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.watchIcon{
+    display: none;
+    position: absolute;
+    color:white;
+    top:10px;
+    left:330px;
+}
+
+.no-underline{
+    text-decoration: none;
+}
+
+.videoinfo{
+    background-color: black;
+    margin-top: 5px;
+}
+
+.uservideodetails{
+    margin-left: 30px;
+    width: 280px;
+}
+
+
+.uservideodetails p{
+    color:#9a9494;
+}
+
+.settingsoption{
+    margin-left: 0px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.captionIcon{
+   display: none;
+   position:absolute;
+   top:40px;
+   margin-left: 330px;
+}
+
+.imgdiv:hover .watchIcon{
+    display: block;
+}
+
+.imgdiv:hover .captionIcon{
+    display: block;
+}
+
+
+/* Styles for Tablets */
+@media (min-width:600px) and (max-width:900px) {
+    .mainmatter{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Styles for Mobile */
+
+@media (max-width:600px) {
+   
+    .asidediv{
+        display: none;
+    }
+
+    .maintop{
+        margin-left: 10px;
+    }
+
+    .mainmatter{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 100px;
+    }
+}

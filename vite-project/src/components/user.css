@@ -1,0 +1,32 @@
+.userform{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.createuser-form {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+  
+  .createuser-form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .createuser-form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: auto;
+    background-color: #f00; /* Red color for the button */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
