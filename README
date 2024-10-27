@@ -1,0 +1,20 @@
+Welcome back. We are bang with a new project YouTube-Clone. Here we tried to replicate the how YouTube looks and how it works.
+Firstly, we need Visual Studio. Then we need to create a folder and name it as YouTube-Clone. In it create two folders.
+One folder name is for Backend and another one is for frontend.
+Open backend folder and in terminal give this line
+ 1. npm init (initials npm)
+ 2. npm i express mongoose cors jsonwebtoken bcryptjs
+Then we can have server.js and follow the provided code .
+Here we use express.js for backend. We will be having mongoose to connect with mongodb. Cors for Cross Over Resource Sharing. Cors helps to run one domain to interact with resources in a different domain.
+And now we have jsonwebtokes to have tokens. It is used for registration purpose. bcryptjs is used for hashing the password. It protects the password.
+
+Now lets dive into another technology. take new terminal and run this line npm create vite@latest. This create the react.js
+After creating the vite project, run these lines in terminal
+ *npm i axios react-icons react-redux @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons
+-- axios: For making HTTP requests.
+-- react-icons: Provides popular icons from different libraries as React components.
+-- react-redux: Provides bindings for using Redux with React.
+-- @fortawesome/react-fontawesome: Enables Font Awesome icons in React.
+-- @fortawesome/free-regular-svg-icons and @fortawesome/free-solid-svg-icons: Specific Font Awesome icon sets (regular and solid styles).
+After instaling this line, follow the provided code. 
+Hope this helps and happy CODING....
